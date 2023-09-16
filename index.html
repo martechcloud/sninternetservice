@@ -119,20 +119,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             var name = document.getElementById('floatingName').value;
             var phone = document.getElementById('floatingPhone').value;
             var email = document.getElementById('floatingEmail').value;
-
-            var eventData = {
-              'event': 'formSubmission', // Change this to your desired event name
-              'formName': 'Sample Form', // Add any additional data you want to track
-
-              'formData': {
-                'name': floatingName,
-                'email': floatingPhone
-                  }
-            };
-
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push(eventData);
-
             
             // Check if any of the input fields are empty
             if (name === '' || phone === '' || email === '') {
